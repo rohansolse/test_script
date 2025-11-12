@@ -1,0 +1,36 @@
+/* Centered card already via Bootstrap classes.
+   This file adds a few polish touches. */
+
+:root {
+  --shadow-lg: 0 10px 25px rgba(0, 0, 0, 0.08);
+}
+
+.card {
+  box-shadow: var(--shadow-lg);
+}
+
+/* Pretty code box */
+.codebox {
+  background: #0b1020;
+  color: #d8e0ff;
+  border-radius: 0.75rem;
+  padding: 1rem 1.25rem;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  font-size: 0.92rem;
+  line-height: 1.4;
+  max-height: 45vh;       /* keep it contained */
+  overflow: auto;         /* scroll if large */
+  margin: 0;
+  border: none;
+}
+
+/* Buttons feel nicer */
+.btn-lg {
+  padding: 0.7rem 1.25rem;
+  border-radius: 0.75rem;
+}
+
+/* Input rounding & size */
+.form-control-lg {
+  border-radius: 0.75rem;
+}
