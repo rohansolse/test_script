@@ -1,14 +1,15 @@
+require("dotenv").config({ path: "../.env" });
 const { Client } = require("pg");
 const fs = require("fs");
 const crypto = require("crypto");
 const generatePassword = require("generate-password");
 
 const PG_CONFIG = {
-  user: process.env.PGUSER || "bartparkinguser",
-  host: process.env.PGHOST || "bart-parking-ezrider.cyenpxt7erci.us-west-1.rds.amazonaws.com",
-  database: process.env.PGDATABASE || "ezrider_bart",
-  password: process.env.PGPASSWORD || "$3bart3&$",
-  port: +(process.env.PGPORT || 5432),
+  user: process.env.PGUSER,
+  host: process.env.PGHOST,
+  database: process.env.PGDATABASE,
+  password: process.env.PGPASSWORD,
+  port: +process.env.PGPORT,
   ssl: { rejectUnauthorized: false },
 };
 
